@@ -1,0 +1,10 @@
+{
+  "measured": false,
+  "os_min": {"windows": "Windows 10 (64-Bit)", "macos": "macOS 12", "linux": "Ubuntu 22.04 oder Debian 12"},
+  "base": {"ram_gb": 4, "disk_gb": 3},
+  "tiers": {
+    "standard": {"label": "Standard", "ram_gb": 4, "extra_disk_gb": 0, "examples": ["Alle Programme", "Ohne KI"]},
+    "kompakt": {"label": "KI Kompakt", "ram_gb": 8, "extra_disk_gb": 4, "examples": ["Texte korrigieren lassen", "Zusammenfassungen", "Formeln bauen"]},
+    "pro": {"label": "KI Pro", "ram_gb": 16, "extra_disk_gb": 8, "examples": ["Bessere Texte und Analysen", "Bilder verstehen"]}
+  }
+}

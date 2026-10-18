@@ -1,0 +1,25 @@
+{
+  "suite": {
+    "name": "Mosaik",
+    "claim": "12 Programme. Kein teures Abo.",
+    "vendor": "Waybuild UG (haftungsbeschränkt)",
+    "website": "www.waybuild.de",
+    "email": "info@waybuild.de",
+    "bundle_prefix": "de.waybuild.mosaik",
+    "background": "#1B1F3B"
+  },
+  "apps": [
+    {"slug": "text", "name": "Mosaik Text", "short": "Schreiben und Dokumente gestalten", "description": "Briefe, Berichte und Bücher schreiben und gestalten. Formatvorlagen, Inhaltsverzeichnisse, Änderungen verfolgen, Serienbriefe, Word-kompatibel (.docx), Export als PDF.", "ki": "Text korrigieren, umformulieren, zusammenfassen, Entwürfe schreiben.", "color": "#2563EB", "glyph": "text", "upstream": "storytold/wordcraft", "upstream_name": "WordCraft", "repo": "cansi798/mosaik-text", "phase": 1},
+    {"slug": "tabelle", "name": "Mosaik Tabelle", "short": "Tabellen, Berechnungen und Diagramme", "description": "Tabellen, Berechnungen und Diagramme. Über 500 Funktionen, Pivot-Tabellen, Filter, Excel-kompatibel (.xlsx).", "ki": "Formel aus Beschreibung erzeugen, Daten erklären, Tabellen nach Anweisung anlegen.", "color": "#15803D", "glyph": "tabelle", "upstream": "storytold/gridcraft", "upstream_name": "GridCraft", "repo": "cansi798/mosaik-tabelle", "phase": 1},
+    {"slug": "praesentation", "name": "Mosaik Präsentation", "short": "Präsentationen und Folien", "description": "Präsentationen mit Folienvorlagen, Übergängen und Referentenansicht, PowerPoint-kompatibel.", "ki": "Folien aus Stichpunkten entwerfen, Sprechernotizen schreiben.", "color": "#E8590C", "glyph": "praesentation", "upstream": "storytold/deckcraft", "upstream_name": "DeckCraft", "repo": "cansi798/mosaik-praesentation", "phase": 2},
+    {"slug": "bild", "name": "Mosaik Bild", "short": "Bildbearbeitung mit Ebenen und Masken", "description": "Bildbearbeitung mit Ebenen, Masken, Retusche und Filtern.", "ki": "Bilder beschreiben, Vorschläge für Korrekturen (KI Pro).", "color": "#DB2777", "glyph": "bild", "upstream": "storytold/photocraft", "upstream_name": "PhotoCraft", "repo": "cansi798/mosaik-bild", "phase": 2},
+    {"slug": "grafik", "name": "Mosaik Grafik", "short": "Logos, Illustrationen und Grafiken", "description": "Logos, Illustrationen und Grafiken als Vektor (SVG, PDF), beliebig vergrößerbar.", "ki": "Texte und Farbpaletten vorschlagen.", "color": "#D97706", "glyph": "grafik", "upstream": "storytold/vectorcraft", "upstream_name": "VectorCraft", "repo": "cansi798/mosaik-grafik", "phase": 2},
+    {"slug": "video", "name": "Mosaik Video", "short": "Videoschnitt, Farbe und Ton", "description": "Videoschnitt mit mehreren Spuren, Farbkorrektur, Titeln und Ton.", "ki": "Untertitel- und Beschreibungstexte entwerfen.", "color": "#C026D3", "glyph": "video", "upstream": "storytold/filmcraft", "upstream_name": "FilmCraft", "repo": "cansi798/mosaik-video", "phase": 2},
+    {"slug": "foto", "name": "Mosaik Foto", "short": "Fotos verwalten und entwickeln", "description": "Fotos verwalten, verschlagworten und RAW-Dateien entwickeln.", "ki": "Schlagworte und Bildbeschreibungen (KI Pro).", "color": "#0E7490", "glyph": "foto", "upstream": "storytold/lightcraft", "upstream_name": "LightCraft", "repo": "cansi798/mosaik-foto", "phase": 2},
+    {"slug": "pdf", "name": "Mosaik PDF", "short": "PDFs lesen, ordnen und schützen", "description": "PDFs lesen, Seiten ordnen, zusammenfügen, bearbeiten und schützen.", "ki": "PDF-Inhalt zusammenfassen, Fragen zum Dokument beantworten.", "color": "#E5484D", "glyph": "pdf", "upstream": "storytold/pdfcraft", "upstream_name": "PdfCraft", "repo": "cansi798/mosaik-pdf", "phase": 2},
+    {"slug": "effekte", "name": "Mosaik Effekte", "short": "Animation und visuelle Effekte", "description": "Bewegte Grafiken, Animation und visuelle Effekte für Videos.", "ki": "Hilfe zu Werkzeugen und Arbeitsschritten.", "color": "#7C3AED", "glyph": "effekte", "upstream": "storytold/effectcraft", "upstream_name": "EffectCraft", "repo": "cansi798/mosaik-effekte", "phase": 2},
+    {"slug": "layout", "name": "Mosaik Layout", "short": "Seitenlayout und Publishing", "description": "Flyer, Magazine und Broschüren professionell setzen, druckfertige PDFs.", "ki": "Texte kürzen und Überschriften vorschlagen.", "color": "#4F46E5", "glyph": "layout", "upstream": "storytold/designcraft", "upstream_name": "DesignCraft", "repo": "cansi798/mosaik-layout", "phase": 2},
+    {"slug": "cad", "name": "Mosaik CAD", "short": "Technisches Zeichnen und Konstruieren", "description": "Technisches Zeichnen und Konstruieren, mit Bemaßung und Ebenen.", "ki": "Hilfe zu Werkzeugen, Maß- und Formelberechnungen.", "color": "#4D7C0F", "glyph": "cad", "upstream": "storytold/cadcraft", "upstream_name": "CADCraft", "repo": "cansi798/mosaik-cad", "phase": 2},
+    {"slug": "audio", "name": "Mosaik Audio", "short": "Audio aufnehmen, schneiden, mischen", "description": "Audio aufnehmen, schneiden, mischen und bereinigen.", "ki": "Hilfe zu Arbeitsschritten.", "color": "#0F766E", "glyph": "audio", "upstream": "storytold/soundcraft", "upstream_name": "SoundCraft", "repo": "cansi798/mosaik-audio", "phase": 2}
+  ]
+}
