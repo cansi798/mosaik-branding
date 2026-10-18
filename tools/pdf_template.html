@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Ubuntu", "DejaVu Sans", sans-serif; color: #1B1F3B; font-size: 9.5pt; }
+  header { background: $background; color: #fff; padding: 14mm 14mm 10mm; }
+  header .brand { display: flex; align-items: center; gap: 5mm; }
+  header img { width: 18mm; height: 18mm; }
+  header h1 { margin: 0; font-size: 26pt; letter-spacing: 0.5pt; }
+  header .claim { font-size: 15pt; margin: 5mm 0 2mm; font-weight: bold; }
+  header p { margin: 0; opacity: 0.85; max-width: 160mm; line-height: 1.4; }
+  main { padding: 8mm 14mm 0; }
+  h2 { font-size: 13pt; margin: 0 0 4mm; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3.5mm; }
+  .app { border: 0.4mm solid #E3E6EF; border-radius: 3mm; padding: 3mm; display: flex; gap: 3mm; }
+  .app img { width: 11mm; height: 11mm; flex: none; }
+  .app b { display: block; font-size: 10pt; }
+  .app .short { color: #555B75; font-size: 8pt; margin: 0.5mm 0 1mm; }
+  .app .ki { font-size: 7.5pt; color: #333; }
+  .app .ki i { color: #4F46E5; font-style: normal; font-weight: bold; }
+  .tiers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3.5mm; margin-top: 7mm; }
+  .tier { border-radius: 3mm; padding: 4mm; background: #F3F4F8; }
+  .tier.dark { background: $background; color: #fff; }
+  .tier h3 { margin: 0 0 1.5mm; font-size: 12pt; }
+  .tier ul { margin: 1mm 0 2mm; padding-left: 4mm; }
+  .tier .req { font-size: 8pt; opacity: 0.9; }
+  .note { margin-top: 5mm; font-size: 7.5pt; color: #555B75; line-height: 1.4; }
+  footer { margin: 6mm 14mm 0; padding: 4mm; background: #F3F4F8; border-radius: 3mm; text-align: center; }
+  footer .mail { font-size: 16pt; font-weight: bold; }
+  .legal { font-size: 6.5pt; color: #777; text-align: center; margin-top: 3mm; padding: 0 14mm; }
+</style>
+</head>
+<body>
+<header>
+  <div class="brand"><img src="icons/mosaik.svg"><h1>$suite_name</h1></div>
+  <div class="claim">$claim</div>
+  <p>Eine komplette Software-Suite für Büro, Bild, Video, Konstruktion und Audio. Läuft auf Ihrem
+  Computer unter Windows, macOS und Linux – auf Wunsch mit eingebauter KI, die ohne Internet arbeitet.</p>
+</header>
+<main>
+  <h2>Die Programme</h2>
+  <div class="grid">$apps</div>
+  <div class="tiers">$tiers</div>
+  <div class="note">$os_note<br>
+  Vorabversion: Beim ersten Öffnen fragt Ihr Computer einmal nach einer Bestätigung.
+  Windows: „Weitere Informationen“ → „Trotzdem ausführen“. macOS: Systemeinstellungen →
+  Datenschutz &amp; Sicherheit → „Dennoch öffnen“.</div>
+</main>
+<footer><div class="mail">$email</div>Interesse an einer Vorabversion oder einem Angebot? Schreiben Sie uns.</footer>
+<div class="legal">$vendor · $website · Die Programme basieren auf freier Open-Source-Software (MIT/Apache-2.0).
+Alle Angaben vorläufig und unverbindlich, Änderungen vorbehalten.</div>
+</body>
+</html>
