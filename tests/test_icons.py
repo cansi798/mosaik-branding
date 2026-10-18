@@ -1,3 +1,4 @@
+import shutil
 import subprocess
 import sys
 import xml.etree.ElementTree as ET
@@ -6,6 +7,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
 import brand  # noqa: E402
 import make_icons  # noqa: E402
+
+RESVG = shutil.which("resvg") or str(Path.home() / ".cargo/bin/resvg")
 
 
 def test_writes_one_svg_per_app_plus_suite(tmp_path):
@@ -20,7 +23,7 @@ def test_writes_one_svg_per_app_plus_suite(tmp_path):
 def test_svgs_render_with_resvg(tmp_path):
     for svg in make_icons.write_all(tmp_path):
         png = svg.with_suffix(".png")
-        subprocess.run(["resvg", "-w", "128", str(svg), str(png)], check=True)
+        subprocess.run([RESVG, "-w", "128", str(svg), str(png)], check=True)
         assert png.stat().st_size > 1000
 
 
